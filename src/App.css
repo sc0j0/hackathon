@@ -1,0 +1,41 @@
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-inner {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+.location {
+  display: inline-block;
+  margin: 0 auto; }
+  .location img {
+    width: 20px;
+    float: left;
+    margin-left: -25px; }
+  .location address {
+    font-style: normal; }
+
+.action-links a {
+  text-decoration: none;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 100%;
+  display: block; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
