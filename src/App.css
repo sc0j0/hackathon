@@ -91,8 +91,9 @@ ul {
     top: 0;
     right: 0;
     font-weight: bold;
+    font-size: 24px;
     display: block;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.3); }
   .results-item .hero {
@@ -101,12 +102,13 @@ ul {
     margin: 0 -20px; }
     .results-item .hero img {
       width: 100%;
-      display: block; }
+      display: block;
+      height: 250px; }
     .results-item .hero .restaurant {
       font-size: 12px;
       display: inline-block;
       font-weight: bold;
-      padding: 5px 10px;
+      padding: 3px 10px;
       background-color: #fff;
       position: absolute;
       left: 50%;
@@ -115,32 +117,33 @@ ul {
       transform: translateX(-50%); }
   .results-item .eyebrow {
     font-size: 12px;
-    font-weight: bold;
     color: #F5A623; }
   .results-item h2 {
     font-size: 18px;
     margin: 0; }
-  .results-item .heading a {
-    font-size: 12px;
-    font-weight: bold;
-    float: right;
-    color: #000;
-    position: relative;
-    padding-right: 13px; }
-    .results-item .heading a:visited {
-      color: #fff; }
-    .results-item .heading a:after {
-      content: '';
-      displat: block;
-      position: absolute;
-      right: 0;
-      top: 5px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 5px 7px 5px;
-      border-color: transparent transparent #444 transparent;
-      transform: rotate(90deg); }
+  .results-item .heading {
+    padding-top: 24px; }
+    .results-item .heading a {
+      font-size: 12px;
+      font-weight: bold;
+      float: right;
+      color: #000;
+      position: relative;
+      padding-right: 13px; }
+      .results-item .heading a:visited {
+        color: #fff; }
+      .results-item .heading a:after {
+        content: '';
+        displat: block;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 7px 5px;
+        border-color: transparent transparent #444 transparent;
+        transform: rotate(90deg); }
   .results-item .description, .results-item tel {
     font-size: 14px; }
 

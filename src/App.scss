@@ -111,8 +111,9 @@ ul {
     top: 0;
     right: 0;
     font-weight: bold;
+    font-size: 24px;
     display: block;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 100%;
     background-color: rgba(255,255,255, 0.3);;
   }
@@ -124,12 +125,13 @@ ul {
     img {
       width: 100%;
       display: block;
+      height: 250px;
     }
     .restaurant {
       font-size: 12px;
       display: inline-block;
       font-weight: bold;
-      padding: 5px 10px;
+      padding: 3px 10px;
       background-color: #fff;
       position: absolute;
       left: 50%;
@@ -142,7 +144,6 @@ ul {
 
   .eyebrow {
     font-size: 12px;
-    font-weight: bold;
     color: #F5A623;
   }
   h2 {
@@ -150,6 +151,7 @@ ul {
     margin: 0;
   }
   .heading {
+    padding-top: 24px;
     a {
       font-size: 12px;
       font-weight: bold;
