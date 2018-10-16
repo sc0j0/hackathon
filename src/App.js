@@ -47,11 +47,20 @@ class App extends Component {
     closeItem() {
         const activeView = false;
         const landingView = true;
+        const selectedView = false;
 
         this.setState({activeView});
         this.setState({landingView});
+        this.setState({selectedView});
     }
   render() {
+
+    let styles = {};
+    if (this.state.miscItem) {
+        styles = {
+            backgroundImage: 'url(' + this.state.miscItem.Image + ')'
+        }
+    }
     return (
       <div className="App">
             <div className="App-inner">
@@ -78,11 +87,11 @@ class App extends Component {
                     <div className="results-item">
                         <ul>
                             <li className="hero">
-                                <img src={this.state.miscItem.Image} alt=""/>
-                                <span class="close" onClick={this.closeItem}>x</span>
+                                <div className="image" style={styles}></div>
+                                <span className="close" onClick={this.closeItem}>x</span>
                                 <div className="restaurant">{this.state.miscItem.Restaurant}</div>
                             </li>
-                            <li class="heading">
+                            <li className="heading">
                                 <span className="eyebrow">{this.state.activeCategory.Category}</span>
                                 <a href="#" onClick={(event)=>{event.preventDefault(); this.getNewRandom();}}>Next</a>
                             </li>
@@ -92,8 +101,11 @@ class App extends Component {
                             <li className="description">
                                 {this.state.miscItem.Description}
                             </li>
-                            <li>
-                                <tel>{this.state.miscItem.Phone}</tel>
+                            <li className="telephone">
+                                {this.state.miscItem.Phone}
+                            </li>
+                             <li className="website">
+                                <a href={this.state.miscItem.Website} target="_blank">{this.state.miscItem.Website}</a>
                             </li>
                         </ul>
                         <button className="cta" onClick={() => {this.selectItem(this.state.miscItem.Menu)}}>Select Order</button>
@@ -103,16 +115,22 @@ class App extends Component {
                 }
                 {this.state.selectedView &&
                 <div className="selected-view view">
-                {console.log(this.state.selectedItem)}
                     <div className="selectedItem">
-                        <h2>Place Your Order</h2>
-                        <address>345 Hudson Street, New York, NY 10014</address>
-                        <img src={this.state.selectedItem.Image} alt=""/>
+                        <header>
+                            <h2>Place Your Order</h2>
+                            <address>345 Hudson Street, New York, NY 10014</address>
+                            <span className="close" onClick={this.closeItem}>x</span>
+                        </header>
+                         <div className="image" style={styles}></div>
                         <div className="copy">
-                            <p>{this.state.selectedItem.Restaurant}</p>
-                            <p>{this.state.selectedItem.Menu}</p>
+                            <ul>
+                                <li className="restaurant">{this.state.selectedItem.Restaurant}</li>
+                                <li>{this.state.selectedItem.Menu}</li>
+                                <li>$12</li>
+                            </ul>
+
                         </div>
-                        <button className="cta">Confirm Order</button>
+                        <a className="cta" href={this.state.selectedItem.Website} target="_blank">Confirm Order</a>
                     </div>
                 </div>
                 }

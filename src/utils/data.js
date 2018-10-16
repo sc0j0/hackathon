@@ -35,8 +35,8 @@ const data =
         "Restaurant": "Houston Village Farm Deli Cafe & Grocery",
         "Phone": "(917) 473-3721",
         "Website": "http://www.maozusa.com/",
-        "Image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/10/8/3/FNM_110115-Falafel-Salad-with-Hummus-Dressing-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1444427818771.jpeg",
-        "Address": "38 Union Square E, New York, NY 10003"
+        "Image": "http://rfghealthyfoods.com/wp-content/uploads/2018/01/Veggie-Stix-Hummus.jpeg",
+        "Address": "61 1st Avenue, New York, NY 10009"
       },
       {
         "Menu": "Veggie Pizza",
