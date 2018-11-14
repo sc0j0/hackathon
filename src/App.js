@@ -58,7 +58,7 @@ class App extends Component {
     let styles = {};
     if (this.state.miscItem) {
         styles = {
-            backgroundImage: 'url(' + this.state.miscItem.Image + ')'
+            backgroundImage: `url(${this.state.miscItem.Image})`;
         }
     }
     return (
